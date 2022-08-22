@@ -1,0 +1,107 @@
+@use "../abstracts" as *;
+
+.open {
+    transform: translatex(100vw);
+}
+
+.nav {
+    position: absolute;
+    min-width: 100vw;
+    min-height: calc(100vh - 5rem);
+    text-align: center;
+    background-color: $veryDarkViolet;
+    background-image: url("../../images/bg-pattern-mobile-nav.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    top: 5rem;
+    left: -100vw;
+    transition: transform ease-out .4s;
+    z-index: 3;
+
+    @include lg {
+        position: static;
+        min-width: fit-content;
+        min-height: fit-content;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        background-image: none;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        padding-top: 2rem;
+
+        @include lg {
+            padding: 0;
+        }
+
+        li {
+            padding: 1rem 0;
+
+            @include lg {
+                padding-left: 2rem;
+
+                :hover {
+                    color: $veryDarkViolet;
+                }
+            }
+        }
+
+
+        li:last-of-type {
+            border: 2px solid white;
+            margin: 1rem 1.5rem;
+
+
+
+            @include lg {
+                margin: 0;
+
+                :hover {
+                    color: white;
+                    background-color: $veryDarkViolet;
+                }
+
+                a {
+                    color: black;
+
+                    @include lg {
+                        border: 2px solid $veryDarkViolet;
+                        background-color: white;
+                        padding: .75rem 1.75rem;
+                        font-size: .85rem;
+
+
+                    }
+                }
+            }
+        }
+
+        li>a {
+            color: white;
+            font-family: $heading-font;
+            text-transform: uppercase;
+            font-size: 1.75rem;
+            font-weight: $medium;
+
+            @include lg {
+                font-family: $heading-font;
+                text-transform: uppercase;
+                font-weight: $large;
+                font-size: .9rem;
+                padding: .45rem 0;
+                letter-spacing: .1rem;
+                color: $darkGrayishViolet;
+
+            }
+
+        }
+
+        @include lg {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

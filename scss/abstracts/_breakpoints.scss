@@ -1,0 +1,7 @@
+$desktop: 376px;
+
+@mixin lg {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}

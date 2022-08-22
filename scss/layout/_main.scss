@@ -1,0 +1,274 @@
+@use "../abstracts" as *;
+
+.main {
+    text-align: center;
+
+    @include lg {
+        max-width: 100vw;
+    }
+
+    &__img {
+        display: block;
+
+        @include lg {
+            display: none;
+        }
+    }
+
+}
+
+.humanize {
+    color: white;
+    height: 435px;
+    padding-top: 6rem;
+    background: top left url('../../images/bg-pattern-intro-left-mobile.svg') no-repeat $darkViolet;
+
+    @include lg {
+        padding: 0 6.5rem;
+        background-image: none;
+        text-align: left;
+        display: flex;
+        height: 37rem;
+    }
+
+    &__line {
+        display: none;
+
+        @include lg {
+            display: block;
+            margin-top: 6.5rem;
+            margin-right: 27rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__title {
+        font-family: $body-font;
+        font-weight: $medium;
+        font-size: 3rem;
+        padding: 0 .75rem;
+        line-height: 3rem;
+        padding-bottom: 1.6rem;
+
+        @include lg {
+            padding: 0;
+            font-size: 4.7rem;
+            padding-bottom: 2rem;
+            line-height: 4.25rem;
+            padding-right: 3rem;
+        }
+    }
+
+    &__para {
+        color: hsla(365, 365, 365, .8);
+        line-height: 1.8rem;
+        font-size: 1rem;
+        font-family: $heading-font;
+        font-weight: $large;
+        padding: 0 1.25rem;
+        padding-bottom: 2.75rem;
+
+        @include lg {
+            padding: 0;
+            padding-bottom: 2rem;
+            font-size: 1rem;
+            padding-right: 2rem;
+        }
+    }
+
+    &__link {
+        color: white;
+        border: 2px solid $veryLightGray;
+        background-color: $darkViolet;
+        padding: .7rem 1.95rem;
+        text-transform: uppercase;
+        font-family: $heading-font;
+        letter-spacing: .1rem;
+        font-weight: $large;
+        font-size: .85rem;
+    }
+
+    .humanize__link:hover {
+        color: $darkViolet;
+        background-color: $veryLightGray;
+    }
+
+    &__img {
+        display: none;
+
+        @include lg {
+            display: block;
+            margin-top: 6.55rem;
+        }
+    }
+}
+
+.different {
+    padding-top: 9rem;
+    position: relative;
+
+    @include lg {
+        padding: 0 6.5rem;
+        padding-top: 15rem;
+        padding-bottom: 4rem;
+        text-align: left;
+    }
+
+    &__line {
+        margin: 0 7rem;
+
+        @include lg {
+            margin-left: 0;
+            margin-right: 60rem;
+            margin-top: 3.75rem;
+        }
+    }
+
+    &__title {
+        font-family: $body-font;
+        font-weight: $medium;
+        font-size: 3rem;
+        padding: 0 .75rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+
+        @include lg {
+            padding-left: 0;
+            font-size: 4.25rem;
+            margin: 1.25rem 0;
+        }
+    }
+
+    &__list {
+
+        @include lg {
+            display: flex;
+            gap: 3rem;
+        }
+
+    }
+
+}
+
+.unique {
+
+
+    &__img {
+        padding-bottom: 2rem;
+
+        @include lg {
+            padding-bottom: 1.9rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.9rem;
+        padding-bottom: 1rem;
+
+        @include lg {
+            padding-bottom: 1.1rem;
+        }
+    }
+
+    &__para {
+        color: $darkGrayishViolet;
+        line-height: 1.8rem;
+        font-size: 1rem;
+        font-family: $heading-font;
+        font-weight: $large;
+        padding: 0 1.15rem;
+        padding-bottom: 2.75rem;
+
+        @include lg {
+            padding: 0;
+            font-size: .9rem;
+            padding-right: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.work {
+    margin: 0 1.75rem;
+    background: top right url('../../images/bg-pattern-how-we-work-mobile.svg') no-repeat $darkViolet;
+    height: 21rem;
+    margin-bottom: 9rem;
+    margin-top: 6rem;
+
+    @include lg {
+        margin: 6rem 6.5rem;
+        margin-bottom: 9rem;
+        height: 15.6rem;
+        background: top right url(../../images/bg-pattern-how-we-work-desktop.svg) no-repeat $darkViolet;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+
+    &__title {
+        font-family: $body-font;
+        font-weight: $medium;
+        color: white;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        padding-top: 4.75rem;
+        padding-bottom: 3rem;
+
+        @include lg {
+            text-align: left;
+            width: 33rem;
+            font-size: 3.75rem;
+            line-height: 3.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__link {
+        color: white;
+        border: 2px solid $veryLightGray;
+        padding: .7rem 1.75rem;
+        text-transform: uppercase;
+        font-family: $heading-font;
+        letter-spacing: .1rem;
+        font-size: .85rem;
+        font-weight: $large;
+    }
+}
+
+.work__link:hover {
+    color: $darkViolet;
+    background-color: $veryLightGray;
+}
+
+.mb-bg {
+    position: absolute;
+    top: 23.75%;
+    right: 0;
+
+    @include lg {
+        display: none;
+    }
+}
+
+.bg-dt {
+    display: none;
+
+    @include lg {
+        display: block;
+        position: absolute;
+        top: -1%;
+        right: 0%;
+    }
+}
+
+.bg-dtop {
+    display: none;
+
+    @include lg {
+        display: block;
+        position: absolute;
+        top: -20%;
+        left: -5%;
+    }
+}

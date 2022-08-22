@@ -1,0 +1,94 @@
+@use "../abstracts" as *;
+
+.footer {
+    background: top left url('../../images/bg-pattern-footer-mobile.svg') no-repeat $veryLightGray;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+
+    @include lg {
+        padding: 4rem 6.5rem 3rem 6.5rem;
+        background: top left url('../../images/bg-pattern-footer-desktop.svg') no-repeat $veryLightGray;
+    }
+
+    &__header {
+
+        @include lg {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__links {
+
+        @include lg {
+            display: flex;
+            gap: 12.5rem;
+        }
+    }
+
+    &__brand {
+        margin-bottom: 1.5rem;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 1.25rem;
+        justify-content: center;
+        padding-bottom: 2rem;
+
+        @include lg {
+            gap: 1rem;
+            cursor: pointer;
+
+            svg>path:hover {
+                fill: $veryDarkViolet;
+            }
+        }
+    }
+
+    &__line {
+        margin: 0 1.75rem;
+
+        @include lg {
+            margin: 0;
+        }
+    }
+}
+
+.links {
+
+    @include lg {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    &__title {
+        font-family: $heading-font;
+        text-transform: uppercase;
+        color: $darkGrayishViolet;
+        font-size: .85rem;
+        padding: 2rem 0;
+        letter-spacing: .025rem;
+
+    }
+
+    &__list {
+        a {
+            color: $veryDarkViolet;
+        }
+
+        li {
+            font-family: $heading-font;
+            text-transform: uppercase;
+            font-weight: $large;
+            font-size: .85rem;
+            padding: .45rem 0;
+            letter-spacing: .1rem;
+
+            :hover {
+                border-bottom: 2px solid black
+            }
+        }
+    }
+}

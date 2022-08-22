@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+.btn {
+    background-color: transparent;
+    border: none;
+
+    @include lg {
+        display: none;
+    }
+}
