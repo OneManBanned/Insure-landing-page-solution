@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/insure-landing-page-solution-mn3Rlf0UyO)
+- Live Site URL: [https://onemanbanned.github.io/Insure-landing-page-solution/)
 
 ### Built with
 
@@ -31,4 +31,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - https://www.frontendmentor.io/profile/OneManBanned
